@@ -135,8 +135,7 @@ We'll start in `userCtrl.js`.
 
 Things to note:
 
-* Because of our `app.use(cors(corsOptions));` we don't need to set headers inside of our login function. The CORS library is handling that for us on every
-  request.
+* Because of our `app.use(cors(corsOptions));` we don't need to set headers inside of our login function. The CORS library is handling that for us on every request.
 * We have set a property on the `req.session` equal to our user. This lets us continue to track which user is currently active.
 
 ___
@@ -152,7 +151,7 @@ an object back containing our new array and the current user. The response objec
 }
 ```
 
-This function will need an accompanying endpoint in your `server.js`, so add an `app.get` endpoint with a path of `'/api/profiles'.
+This function will need an accompanying endpoint in your `server.js`, so add an `app.get` endpoint with a path of `'/api/profiles'`.
 
 ## Step 3: Serving static files
 
